@@ -35,13 +35,12 @@ public class Catalina {
                 j.add(tempC);
             }
         }   
-        
-        System.out.println(j);
+        for (int x=0; x<j.size(); x++){
+            e = e + j.get(x);
+            
+        }
+        System.out.println(e);
         }
     else System.out.println("I am Error");
         }
     }
-    
-    
-
-
