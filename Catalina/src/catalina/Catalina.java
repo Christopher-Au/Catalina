@@ -26,16 +26,19 @@ public class Catalina {
     Scanner scan = new Scanner(new File("pp.txt"));
     
     if(scan.hasNext()){
-        String temp ="";
-        String tempTwo="";
+        String temp = scan.nextLine();
+        ArrayList j = new ArrayList();
+        String e = "";
         for (int x=0; x<temp.length(); x++){
-            if temp.charAt(x).equals([A-Z]){
-                
+            Character tempC = temp.charAt(x);
+            if (Character.isUpperCase(tempC)){
+                j.add(tempC);
             }
-        }
+        }   
         
-        
+        System.out.println(j);
         }
+    else System.out.println("I am Error");
         }
     }
     
